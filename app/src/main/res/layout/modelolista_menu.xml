@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:elevation="10dp"
-    android:padding="10dp"
-    >
+    android:background="#AAFFFFFF"
+    android:elevation="2dp"
+    android:padding="10dp">
 
 
     <TextView
-        android:id="@+id/tituloCardMenu"
+        android:id="@+id/descricaoCardMenu"
         android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:fontFamily="sans-serif-condensed"
-        android:shadowColor="#7E7E7E"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed-light"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#202020"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagemCardMenu" />
-
+        app:layout_constraintTop_toBottomOf="@+id/tituloCardMenu" />
 
     <ImageView
         android:id="@+id/imagemCardMenu"
         android:layout_width="match_parent"
         android:layout_height="194dp"
         android:background="@color/colorPrimaryDark"
+        android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/orientar" />
 
     <TextView
-        android:id="@+id/descricaoCardMenu"
+        android:id="@+id/tituloCardMenu"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:elevation="10dp"
-        android:fontFamily="sans-serif-condensed-light"
+        android:layout_height="46dp"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="#7E7E7E"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloCardMenu" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imagemCardMenu" />
 
     <android.widget.Space
         android:layout_width="0dp"

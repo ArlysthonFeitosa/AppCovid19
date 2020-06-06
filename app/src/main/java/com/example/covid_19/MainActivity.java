@@ -11,22 +11,17 @@ public class MainActivity extends AppCompatActivity {
 
     ListView lista_menu;
 
-    String[] listaTitulosCard = {"Oriente-se", "Previnir", "Fake News"};
+    String[] listaTitulosCard = {" Oriente-se", " Previnir", " Fake News"};
     int[] listaImagensCard = {R.drawable.orientar, R.drawable.prevenir, R.drawable.fakenews};
-    String[] listaDescricoesCard = {"Responda algumas pesguntas em relação aos seus sintomas e saiba se você precisa ir ao hospital para consulta.",
-            "Em um momento de pandemia, é essencial saber como se previnir para não ser contaminado com o vírus. Clique para saber como fazer isso.",
-            "Cuidado com as notícias falsas, algumas chegam até a colocar a sua vida em risco! Fique por dentro para não cair nessa."};
+    String[] listaDescricoesCard = {" Responda algumas pesguntas em relação aos seus sintomas e saiba se você precisa ir ao hospital para consulta.\n",
+            " Em um momento de pandemia, é essencial saber como se previnir para não ser contaminado com o vírus. Clique para saber como fazer isso.\n",
+            " Cuidado com as notícias falsas, algumas chegam até a colocar a sua vida em risco! Fique por dentro para não cair nessa.\n"};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
-                android.R.layout.simple_list_item_1,
-                android.R.id.text1, listaTitulos);
-        */
 
 
         lista_menu = findViewById(R.id.lista_menu);
