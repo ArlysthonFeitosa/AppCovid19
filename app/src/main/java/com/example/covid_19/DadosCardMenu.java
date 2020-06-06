@@ -1,5 +1,7 @@
 package com.example.covid_19;
 
+
+
 public class DadosCardMenu {
     private int imagemCardMenu;
     private String tituloCardMenu;
@@ -22,6 +24,7 @@ public class DadosCardMenu {
     public String getDescricaoCard() {
         return descricaoCardMenu;
     }
+
 }
 
 

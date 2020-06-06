@@ -44,6 +44,7 @@ public class CardMenuAdapter extends ArrayAdapter {
             cardMenu.tituloCardMenu = (TextView) viewCardMenu.findViewById(R.id.tituloCardMenu);
             cardMenu.descricaoCardMenu = (TextView) viewCardMenu.findViewById(R.id.descricaoCardMenu);
 
+
             viewCardMenu.setTag(cardMenu);
 
 
