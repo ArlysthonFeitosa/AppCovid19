@@ -36,8 +36,7 @@ public class CardPrevenirAdapter extends ArrayAdapter {
         CardPrevenir cardPrevenir;
 
         if(convertView != null){
-
-            LayoutInflater inflater = (LayoutInflater)this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             viewCardPrevenir = inflater.inflate(R.layout.modelolistaprevenir, parent, false);
 
             cardPrevenir = new CardPrevenir();
@@ -54,7 +53,6 @@ public class CardPrevenirAdapter extends ArrayAdapter {
 
         cardPrevenir.tituloPrevenir.setText(dadosCardPrevenir.getTituloPrevenir());
         cardPrevenir.descricaoPrevenir.setText(dadosCardPrevenir.getDescricaoPrevenir());
-
 
          return viewCardPrevenir;
     }
