@@ -12,3 +12,4 @@ public class FakeNews extends AppCompatActivity {
         setContentView(R.layout.activity_fake_news);
     }
 }
+
