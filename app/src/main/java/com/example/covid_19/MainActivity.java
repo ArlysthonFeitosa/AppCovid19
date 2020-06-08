@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
     String[] listaTitulosCard = {" Oriente-se", " Previnir", " Fake News"};
     int[] listaImagensCard = {R.drawable.orientar, R.drawable.prevenir, R.drawable.fakenews};
-    String[] listaDescricoesCard = {" Responda algumas pesguntas em relação aos seus sintomas e saiba se você precisa ir ao hospital para consulta.\n",
-            " Em um momento de pandemia, é essencial saber como se previnir para não ser contaminado com o vírus. Clique para saber como fazer isso.\n",
-            " Cuidado com as notícias falsas, algumas chegam até a colocar a sua vida em risco! Fique por dentro para não cair nessa.\n"};
+    String[] listaDescricoesCard = {"Responda algumas pesguntas em relação aos seus sintomas e saiba se você precisa ir ao hospital para consulta.\n",
+            "Em um momento de pandemia, é essencial saber como se previnir para não ser contaminado com o vírus. Clique para saber como fazer isso.\n",
+            "Cuidado com as notícias falsas, algumas chegam até a colocar a sua vida em risco! Fique por dentro para não cair nessa.\n"};
 
 
     @Override
