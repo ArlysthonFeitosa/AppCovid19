@@ -108,7 +108,6 @@ class PrevenirAdapter extends ArrayAdapter {
             viewPrevinir = inflater1.inflate(R.layout.modelolistaprevenir, parent, false);
 
             viewCardPrevenir = new ViewCardPrevenir();
-
             viewCardPrevenir.titulo = (TextView) viewPrevinir.findViewById(R.id.tituloCardPrevenir);
             viewCardPrevenir.descricao = (TextView) viewPrevinir.findViewById(R.id.descricaoCardPrevenir);
             viewCardPrevenir.cardView = (CardView) viewPrevinir.findViewById(R.id.cardPrevenir);
