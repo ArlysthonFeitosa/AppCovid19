@@ -40,19 +40,26 @@ public class MainActivity extends AppCompatActivity {
             cardMenuAdapter.add(dadosCardMenu);
             contadorListaDados++;
         }
-
         lista_menu.setAdapter(cardMenuAdapter);
-
-
         lista_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(getApplicationContext(), PesquisaFebre.class);
-                        startActivity(intent);
+                        Intent orientar = new Intent(getApplicationContext(), PesquisaFebre.class);
+                        startActivity(orientar);
+                        break;
 
+                    case 1:
+                        Intent prevenir = new Intent(getApplicationContext(), Prevenir.class);
+                        startActivity(prevenir);
+                        break;
+
+                    case 2:
+                        Intent fakeNews = new Intent(getApplicationContext(), FakeNews.class);
+                        startActivity(fakeNews);
+                        break;
                 }
             }
         });

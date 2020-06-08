@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HospitalNotCovid"></activity>
+        <activity android:name=".FakeNews"></activity>
+        <activity android:name=".Prevenir" />
+        <activity android:name=".HospitalNotCovid" />
         <activity android:name=".HospitalCovid" />
         <activity android:name=".IsolamentoRigido" />
         <activity android:name=".FicarEmCasa" />
@@ -17,7 +19,6 @@
         <activity android:name=".Dores" />
         <activity android:name=".NotDoresParaCansaco" />
         <activity android:name=".PesquisaFebre" />
-        <activity android:name=".perguntas.FebreTosseGarganta" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

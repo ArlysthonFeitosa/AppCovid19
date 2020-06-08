@@ -1,6 +1,5 @@
 package com.example.covid_19;
 
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
