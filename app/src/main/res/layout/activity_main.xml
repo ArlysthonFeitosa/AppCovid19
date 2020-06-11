@@ -13,9 +13,12 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:background="#FFFFFF"
-        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ListView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

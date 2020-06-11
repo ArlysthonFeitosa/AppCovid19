@@ -19,6 +19,7 @@ public class FakeNews extends AppCompatActivity {
 
     public void clicouVoltar(View v){
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }
 
 }

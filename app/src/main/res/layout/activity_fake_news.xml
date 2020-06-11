@@ -31,6 +31,7 @@
         android:layout_marginRight="24dp"
         android:fontFamily="sans-serif"
         android:text="- Confirme se as mensagens que você recebe são realmente verdadeiras antes de repassá-las.\n\n- O número de Whatsapp (61) 99289-4640 está disponível de segunda a sexta para checagem da veracidade das notícias. Para fazer o uso correto da ferramenta, acesse saude.gov.br/fakenews e leia os termos de uso.\n\n- O Disque Saúde 136 está funcionando 24 horas por dia durante os 7 dias da semana, e está apto a esclarecer dúvidas sobre o coronavírus. A ligação é gratuita."
+        android:textIsSelectable="true"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

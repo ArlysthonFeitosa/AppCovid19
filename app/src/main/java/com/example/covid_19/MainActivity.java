@@ -127,7 +127,6 @@ class CardMenuAdapter extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
         View viewCardMenu = convertView; //Layout do cartão
         CardMenu cardMenu; //O que tem no cartão
 
@@ -140,10 +139,7 @@ class CardMenuAdapter extends ArrayAdapter {
             cardMenu.imagemCardMenu = (ImageView) viewCardMenu.findViewById(R.id.imagemCardMenu);
             cardMenu.tituloCardMenu = (TextView) viewCardMenu.findViewById(R.id.tituloCardMenu);
             cardMenu.descricaoCardMenu = (TextView) viewCardMenu.findViewById(R.id.descricaoCardMenu);
-
-
             viewCardMenu.setTag(cardMenu);
-
 
         }else{
             cardMenu = (CardMenu) viewCardMenu.getTag();
@@ -151,11 +147,9 @@ class CardMenuAdapter extends ArrayAdapter {
 
         DadosCardMenu dadosCardMenu;
         dadosCardMenu = (DadosCardMenu) this.getItem(position);
-
         cardMenu.imagemCardMenu.setImageResource(dadosCardMenu.getImagemCardMenu());
         cardMenu.tituloCardMenu.setText(dadosCardMenu.getTituloCardMenu());
         cardMenu.descricaoCardMenu.setText(dadosCardMenu.getDescricaoCard());
-
 
         return viewCardMenu;
     }
