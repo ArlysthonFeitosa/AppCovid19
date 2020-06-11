@@ -25,6 +25,7 @@
         android:layout_width="86dp"
         android:layout_height="45dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="clicouSim"
         android:text="Sim"
         android:textColor="#FFFFFF"
         android:textSize="24sp"

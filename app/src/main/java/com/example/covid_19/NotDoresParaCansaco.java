@@ -15,7 +15,7 @@ public class NotDoresParaCansaco extends AppCompatActivity {
     }
 
     public void clicouSim(View v){
-        Intent intent = new Intent(getApplicationContext(), NotDoresParaCansaco.class);
+        Intent intent = new Intent(getApplicationContext(), HospitalNotCovid.class);
         startActivity(intent);
         finish();
     }
