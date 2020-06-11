@@ -1,10 +1,10 @@
 package com.example.covid_19;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DoresParaCansaco extends AppCompatActivity {
 
@@ -26,6 +26,3 @@ public class DoresParaCansaco extends AppCompatActivity {
         finish();
     }
 }
-
-
-
