@@ -21,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     ListView lista_menu;
 
-    String[] listaTitulosCard = {" Oriente-se", " Previnir"};
+    String[] listaTitulosCard = {"Oriente-se", "Prevenir", "Notícias Falsas"};
     int[] listaImagensCard = {R.drawable.orientar, R.drawable.prevenir, R.drawable.fakenews};
     String[] listaDescricoesCard = {"Responda algumas pesguntas em relação aos seus sintomas e saiba se você precisa ir ao hospital para consulta.\n",
-            "Em um momento de pandemia, é essencial saber como se previnir para não ser contaminado com o vírus. Clique para saber como fazer isso.\n"};
+            "Em um momento de pandemia, é essencial saber como se prevenir para não ser contaminado com o vírus. Clique para saber como fazer isso.\n",
+        "Saiba o que fazer para não compartilhar mentiras sobre o corona vírus.\n"};
 
 
     @Override
@@ -60,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         Intent prevenir = new Intent(getApplicationContext(), Prevenir.class);
                         startActivity(prevenir);
+                        break;
+
+                    case 2:
+                        Intent fakeNews = new Intent(getApplicationContext(), FakeNews.class);
+                        startActivity(fakeNews);
                         break;
                 }
             }

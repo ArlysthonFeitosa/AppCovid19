@@ -23,13 +23,18 @@ public class Prevenir extends AppCompatActivity {
 
     ListView listaPrevenir;
 
-    String[] listaTitulosPrevenir = {"Ambiente", "Contato", "Higiene", "Isolamento", "Máscara", "Objetos"};
+    String[] listaTitulosPrevenir = {"Ambiente", "Higiene", "Máscara", "Tosse", "Rosto", "Contato", "Isolamento", "Objetos"};
     String[] listaDescricoesPrevenir = {"Mantenha o ambiente bem ventilado para facilitar a circulação do ar.",
-        "Evite ter contato com pessoas, estabeleça uma distância de no mínimo 2 metros.",
-        "Lave as mãos com frequência com sabão. Caso saia de casa, passe álcool em gel 70%.",
-        "Permaneça em isolamento social de acordo com o decreto estabelecido pelo Estado.",
-        "Use máscara, mesmo que não esteja contaminado, ela aumenta a sua proteção conta o vírus.",
-        "Para evitar contaminação com o vírus, é essencial não compartilhar objetos."};
+            "Lave as mãos com frequência com sabão. Caso saia de casa, passe álcool em gel 70%.",
+            "Use máscara, mesmo que não esteja contaminado, ela aumenta a sua proteção conta o vírus.",
+            "Use o braço para cobrir a tosse ou o espirro.",
+            "Evite ao máximo tocar no rosto.",
+            "Evite ter contato com pessoas, estabeleça uma distância de no mínimo 2 metros.",
+            "Permaneça em isolamento social de acordo com o decreto estabelecido pelo orgão de saúde.",
+            "Para evitar contaminação com o vírus, é essencial não compartilhar objetos."};
+
+
+
 
 
     @Override
@@ -49,7 +54,6 @@ public class Prevenir extends AppCompatActivity {
                     listaDescricoesPrevenir[incremento]);
             prevenirAdapter.add(dadosCardPrevenir);
             incremento++;
-
         }
 
         listaPrevenir.setAdapter(prevenirAdapter);
@@ -59,13 +63,13 @@ public class Prevenir extends AppCompatActivity {
 class ViewCardPrevenir{
     TextView titulo;
     TextView descricao;
-    CardView cardView;
-    ConstraintLayout constraintLayout;
 }
 
 class DadosCardPrevenir{
     private String titulo;
     private String descricao;
+    private String titulo2;
+    private String descricao2;
 
     public DadosCardPrevenir(String titulo, String descricao) {
         this.titulo = titulo;
@@ -110,8 +114,7 @@ class PrevenirAdapter extends ArrayAdapter {
             viewCardPrevenir = new ViewCardPrevenir();
             viewCardPrevenir.titulo = (TextView) viewPrevinir.findViewById(R.id.tituloCardPrevenir);
             viewCardPrevenir.descricao = (TextView) viewPrevinir.findViewById(R.id.descricaoCardPrevenir);
-            viewCardPrevenir.cardView = (CardView) viewPrevinir.findViewById(R.id.cardPrevenir);
-            viewCardPrevenir.constraintLayout = (ConstraintLayout) viewPrevinir.findViewById(R.id.layoutCard);
+
 
             viewPrevinir.setTag(viewCardPrevenir);
         }else{
@@ -122,6 +125,7 @@ class PrevenirAdapter extends ArrayAdapter {
         dadosCardPrevenir = (DadosCardPrevenir) this.getItem(position);
         viewCardPrevenir.titulo.setText(dadosCardPrevenir.getTitulo());
         viewCardPrevenir.descricao.setText(dadosCardPrevenir.getDescricao());
+
 
         return viewPrevinir;
     }

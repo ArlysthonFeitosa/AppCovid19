@@ -10,9 +10,19 @@
 
 
     <android.widget.Space
+        android:id="@+id/space3"
+        android:layout_width="383dp"
+        android:layout_height="24dp"
+        android:fadingEdgeLength="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Space
         android:id="@+id/space"
-        android:layout_width="390dp"
-        android:layout_height="46dp"
+        android:layout_width="383dp"
+        android:layout_height="24dp"
         android:fadingEdgeLength="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +32,16 @@
         android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:elevation="20dp"
         app:cardBackgroundColor="@android:color/holo_blue_dark"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:elevation="20dp">
+        app:layout_constraintTop_toBottomOf="@+id/space3">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -35,8 +49,12 @@
 
             <TextView
                 android:id="@+id/descricaoCardMenu"
-                android:layout_width="390dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@android:color/holo_blue_dark"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="TextView"
@@ -44,7 +62,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tituloCardMenu" />
 
@@ -52,6 +70,10 @@
                 android:id="@+id/tituloCardMenu"
                 android:layout_width="0dp"
                 android:layout_height="46dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@android:color/holo_blue_dark"
                 android:fontFamily="sans-serif-condensed"
                 android:shadowColor="#7E7E7E"
