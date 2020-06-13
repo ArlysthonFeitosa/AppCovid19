@@ -1,5 +1,6 @@
 # App Coronavírus (Covid-19)
 
+
 ### Objetivos:
    * Diminuir idas desnecessárias ao hospital
    * Informar sobre como se prevenir
