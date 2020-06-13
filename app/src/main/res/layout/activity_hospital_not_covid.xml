@@ -40,12 +40,12 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Provavelmente você não foi\ncontaminado(a) pelo Corona\nVírus, mas não podemos concluir\ndiagnóstico. É necessário que\nprocure assistência médica\no mais rápido possível por\ncausa da sua dificuldade\nrespiratória ."
+        android:gravity="center_horizontal"
+        android:text="Provavelmente você não foi\ncontaminado(a) pelo coronavírus,\nmas não podemos concluir\ndiagnóstico. É necessário que\nprocure assistência médica\no mais rápido possível por\ncausa da sua dificuldade\nrespiratória ."
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloPergunta7"
-        app:layout_constraintVertical_bias="0.25"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.25" />
 </androidx.constraintlayout.widget.ConstraintLayout>

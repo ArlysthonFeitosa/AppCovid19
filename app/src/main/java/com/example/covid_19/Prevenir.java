@@ -25,8 +25,8 @@ public class Prevenir extends AppCompatActivity {
 
     String[] listaTitulosPrevenir = {"Ambiente", "Higiene", "Máscara", "Tosse", "Rosto", "Contato", "Isolamento", "Objetos"};
     String[] listaDescricoesPrevenir = {"Mantenha o ambiente bem ventilado para facilitar a circulação do ar.",
-            "Lave as mãos com frequência com sabão. Caso saia de casa, passe álcool em gel 70%.",
-            "Use máscara, mesmo que não esteja contaminado, ela aumenta a sua proteção conta o vírus.",
+            "Lave as mãos com sabão com frequência. Caso saia de casa, passe álcool em gel 70%.",
+            "Use máscara, mesmo que não esteja contaminado, ela aumenta a sua proteção contra o vírus.",
             "Use o braço para cobrir a tosse ou o espirro.",
             "Evite ao máximo tocar no rosto.",
             "Evite ter contato com pessoas, estabeleça uma distância de no mínimo 2 metros.",
