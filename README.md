@@ -30,6 +30,7 @@
    
    
    
+
    * #### Orientações
    ![Orientações](https://github.com/ArlysthonFeitosa/AppCovid19/blob/master/Imagens/Orienta%C3%A7%C3%B5es.png)
    
