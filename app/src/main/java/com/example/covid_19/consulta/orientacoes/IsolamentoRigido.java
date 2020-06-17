@@ -1,4 +1,4 @@
-package com.example.covid_19.orientacoes;
+package com.example.covid_19.consulta.orientacoes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,17 +9,18 @@ import android.view.View;
 import com.example.covid_19.MainActivity;
 import com.example.covid_19.R;
 
-public class HospitalNotCovid extends AppCompatActivity {
+public class IsolamentoRigido extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_not_covid);
+        setContentView(R.layout.activity_isolamento_rigido);
     }
 
     public void clicouContinuar(View v){
-        Intent continuar = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(continuar);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+        finish();
     }
-}
 
+}

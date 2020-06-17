@@ -115,9 +115,8 @@ class PrevenirAdapter extends ArrayAdapter {
             viewCardPrevenir = new ViewCardPrevenir();
             viewCardPrevenir.titulo = (TextView) viewPrevinir.findViewById(R.id.tituloCardPrevenir);
             viewCardPrevenir.descricao = (TextView) viewPrevinir.findViewById(R.id.descricaoCardPrevenir);
-
-
             viewPrevinir.setTag(viewCardPrevenir);
+
         }else{
             viewCardPrevenir = (ViewCardPrevenir) viewPrevinir.getTag();
         }
@@ -126,7 +125,6 @@ class PrevenirAdapter extends ArrayAdapter {
         dadosCardPrevenir = (DadosCardPrevenir) this.getItem(position);
         viewCardPrevenir.titulo.setText(dadosCardPrevenir.getTitulo());
         viewCardPrevenir.descricao.setText(dadosCardPrevenir.getDescricao());
-
 
         return viewPrevinir;
     }

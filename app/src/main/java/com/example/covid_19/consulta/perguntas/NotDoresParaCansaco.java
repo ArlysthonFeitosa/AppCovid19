@@ -1,4 +1,4 @@
-package com.example.covid_19.perguntas;
+package com.example.covid_19.consulta.perguntas;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.covid_19.orientacoes.HospitalNotCovid;
-import com.example.covid_19.orientacoes.IsolamentoRigido;
+import com.example.covid_19.consulta.orientacoes.HospitalNotCovid;
+import com.example.covid_19.consulta.orientacoes.IsolamentoRigido;
 import com.example.covid_19.R;
 
 public class NotDoresParaCansaco extends AppCompatActivity {

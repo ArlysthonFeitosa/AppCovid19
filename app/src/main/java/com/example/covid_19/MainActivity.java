@@ -14,13 +14,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.example.covid_19.perguntas.PesquisaFebre;
+import com.example.covid_19.consulta.perguntas.PesquisaFebre;
 
 
 public class MainActivity extends AppCompatActivity {
 
+
     ListView lista_menu;
 
+    //Dados da lista do menu principal
     String[] listaTitulosCard = {"Oriente-se", "Prevenir", "Notícias Falsas"};
     int[] listaImagensCard = {R.drawable.orientar, R.drawable.prevenir, R.drawable.fakenews};
     String[] listaDescricoesCard = {"Responda algumas perguntas em relação aos seus sintomas e saiba se você precisa ir ao hospital para consulta.\n",
@@ -33,13 +35,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         lista_menu = findViewById(R.id.lista_menu);
-        CardMenuAdapter cardMenuAdapter = new CardMenuAdapter(getApplicationContext(), R.layout.modelolista_menu);
+        CardMenuAdapter cardMenuAdapter = new CardMenuAdapter(getApplicationContext(),
+                R.layout.modelolista_menu); //Adaptador da lista do menu principal
 
+
+        //Percorrendo lista de dados
         int contadorListaDados = 0;
         for(String titulo : listaTitulosCard){
-
             DadosCardMenu dadosCardMenu;
             dadosCardMenu = new DadosCardMenu(listaImagensCard[contadorListaDados], titulo,
                     listaDescricoesCard[contadorListaDados]);
@@ -49,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         lista_menu.setAdapter(cardMenuAdapter);
+
+        //Ao clicar na lista, identificar a posição e direcionar para activity
         lista_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -81,9 +86,7 @@ class CardMenu {
     ImageView imagemCardMenu;
     TextView tituloCardMenu;
     TextView descricaoCardMenu;
-
 }
-
 
 
 
@@ -109,7 +112,6 @@ class DadosCardMenu {
     public String getDescricaoCard() {
         return descricaoCardMenu;
     }
-
 }
 
 

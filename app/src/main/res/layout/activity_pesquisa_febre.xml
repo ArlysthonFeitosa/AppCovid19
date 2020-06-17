@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".perguntas.PesquisaFebre">
+    tools:context=".consulta.perguntas.PesquisaFebre">
 
     <TextView
         android:id="@+id/tituloPergunta1"
