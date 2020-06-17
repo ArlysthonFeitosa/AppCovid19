@@ -16,7 +16,7 @@
    
 ### Imagens do projeto
    * #### Fluxograma das perguntas para orientação
-   ![Fluxograma](https://github.com/ArlysthonFeitosa/AppCovid19/blob/master/Imagens/FluxogramaPerguntas.png)
+   ![Fluxograma](https://github.com/ArlysthonFeitosa/AppCovid19/blob/master/Imagens/FluxogramaDasPerguntas.png)
 
 
 
@@ -30,6 +30,7 @@
    
    
    
+
    * #### Orientações
    ![Orientações](https://github.com/ArlysthonFeitosa/AppCovid19/blob/master/Imagens/Orienta%C3%A7%C3%B5es.png)
    
