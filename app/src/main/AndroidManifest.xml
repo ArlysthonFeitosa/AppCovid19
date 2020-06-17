@@ -12,14 +12,14 @@
         <activity android:name=".FakeNews"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Prevenir" />
-        <activity android:name=".HospitalNotCovid" />
-        <activity android:name=".HospitalCovid" />
-        <activity android:name=".IsolamentoRigido" />
-        <activity android:name=".FicarEmCasa" />
-        <activity android:name=".DoresParaCansaco" />
-        <activity android:name=".Dores" />
-        <activity android:name=".NotDoresParaCansaco" />
-        <activity android:name=".PesquisaFebre" />
+        <activity android:name=".orientacoes.HospitalNotCovid" />
+        <activity android:name=".orientacoes.HospitalCovid" />
+        <activity android:name=".orientacoes.IsolamentoRigido" />
+        <activity android:name=".orientacoes.FicarEmCasa" />
+        <activity android:name=".perguntas.DoresParaCansaco" />
+        <activity android:name=".perguntas.Dores" />
+        <activity android:name=".perguntas.NotDoresParaCansaco" />
+        <activity android:name=".perguntas.PesquisaFebre" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

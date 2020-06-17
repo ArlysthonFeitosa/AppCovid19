@@ -3,7 +3,6 @@ package com.example.covid_19;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import com.example.covid_19.perguntas.PesquisaFebre;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             cardMenuAdapter.add(dadosCardMenu);
             contadorListaDados++;
         }
+
         lista_menu.setAdapter(cardMenuAdapter);
         lista_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -75,12 +76,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
 class CardMenu {
     ImageView imagemCardMenu;
     TextView tituloCardMenu;
     TextView descricaoCardMenu;
 
 }
+
+
 
 
 class DadosCardMenu {
@@ -107,6 +111,9 @@ class DadosCardMenu {
     }
 
 }
+
+
+
 
 class CardMenuAdapter extends ArrayAdapter {
 

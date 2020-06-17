@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PesquisaFebre">
+    tools:context=".perguntas.PesquisaFebre">
 
     <TextView
         android:id="@+id/tituloPergunta1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Você sente febre, tosse\nou dor de garganta?"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
