@@ -35,8 +35,6 @@ public class Prevenir extends AppCompatActivity {
 
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,10 +58,13 @@ public class Prevenir extends AppCompatActivity {
     }
 }
 
+
 class ViewCardPrevenir{
     TextView titulo;
     TextView descricao;
 }
+
+
 
 class DadosCardPrevenir{
     private String titulo;
